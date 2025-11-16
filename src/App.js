@@ -27,8 +27,10 @@ import LaunchVideoModal from './components/LaunchVideoModal';
 import './App.css';
 
 function App() {
-  // Get basename for GitHub Pages
-  const basename = process.env.PUBLIC_URL || '/Safari_Strives';
+  // Only use basename for GitHub Pages, not for other deployments
+  const basename = process.env.PUBLIC_URL && process.env.PUBLIC_URL.includes('github.io') 
+    ? process.env.PUBLIC_URL.replace(/^https?:\/\/[^/]+/, '') 
+    : undefined;
   
   return (
     <Router basename={basename}>
