@@ -27,10 +27,24 @@ import LaunchVideoModal from './components/LaunchVideoModal';
 import './App.css';
 
 function App() {
-  // Only use basename for GitHub Pages, not for other deployments
-  const basename = process.env.PUBLIC_URL && process.env.PUBLIC_URL.includes('github.io') 
-    ? process.env.PUBLIC_URL.replace(/^https?:\/\/[^/]+/, '') 
-    : undefined;
+  // Use basename for GitHub Pages deployment
+  // Extract path from homepage URL or use default
+  const getBasename = () => {
+    if (process.env.PUBLIC_URL) {
+      try {
+        const url = new URL(process.env.PUBLIC_URL);
+        return url.pathname;
+      } catch {
+        // If it's already a path, use it directly
+        return process.env.PUBLIC_URL.startsWith('/') 
+          ? process.env.PUBLIC_URL 
+          : '/Safari_Strives';
+      }
+    }
+    return '/Safari_Strives';
+  };
+  
+  const basename = getBasename();
   
   return (
     <Router basename={basename}>
