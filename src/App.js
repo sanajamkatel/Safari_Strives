@@ -27,8 +27,11 @@ import LaunchVideoModal from './components/LaunchVideoModal';
 import './App.css';
 
 function App() {
+  // Get basename for GitHub Pages
+  const basename = process.env.PUBLIC_URL || '/Safari_Strives';
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="App">
         <ScrollToTop />
         <Navbar />
