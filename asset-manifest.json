@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Safari_Strives/static/css/main.7f6799db.css",
-    "main.js": "/Safari_Strives/static/js/main.efade31c.js",
+    "main.js": "/Safari_Strives/static/js/main.279bff54.js",
     "static/media/000A0435.jpeg": "/Safari_Strives/static/media/000A0435.87beb04b08cb4f88b837.jpeg",
     "static/media/000A8375.JPG": "/Safari_Strives/static/media/000A8375.8a7beeaedfaba8427eb6.JPG",
     "static/media/forfront-cover.JPG": "/Safari_Strives/static/media/forfront-cover.8a7beeaedfaba8427eb6.JPG",
@@ -37,10 +37,10 @@
     "static/media/ellie.jpeg": "/Safari_Strives/static/media/ellie.2e58ab7d75366e6d144a.jpeg",
     "index.html": "/Safari_Strives/index.html",
     "main.7f6799db.css.map": "/Safari_Strives/static/css/main.7f6799db.css.map",
-    "main.efade31c.js.map": "/Safari_Strives/static/js/main.efade31c.js.map"
+    "main.279bff54.js.map": "/Safari_Strives/static/js/main.279bff54.js.map"
   },
   "entrypoints": [
     "static/css/main.7f6799db.css",
-    "static/js/main.efade31c.js"
+    "static/js/main.279bff54.js"
   ]
 }
