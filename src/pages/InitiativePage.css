@@ -1,0 +1,630 @@
+.initiative-page {
+  padding-top: 150px;
+}
+
+/* Hero Section */
+.initiative-hero {
+  background: linear-gradient(135deg, #526e58, #92b24c);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.initiative-hero.nutrition {
+  background: linear-gradient(135deg, #92b24c, #526e58);
+}
+
+.initiative-hero.teaching {
+  background: linear-gradient(135deg, #526e58, #92b24c);
+}
+
+.initiative-hero.sanitary {
+  background: linear-gradient(135deg, #92b24c, #526e58);
+}
+
+.initiative-hero.has-slides .container,
+.initiative-hero.has-slides .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 2;
+}
+
+.hero-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-dot.active {
+  background: #ffffff;
+  border-color: #ffffff;
+  transform: scale(1.15);
+}
+
+.hero-dot:hover {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: rgba(255, 255, 255, 0.95);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-icon {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  backdrop-filter: blur(10px);
+}
+
+.hero-icon i {
+  font-size: 3rem;
+  color: white;
+}
+
+.initiative-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Content Section */
+.initiative-content {
+  background: #f8f9fa;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.content-main {
+  background: white;
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.content-main h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.content-main h3 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.content-main p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Process Steps */
+.process-steps {
+  margin: 30px 0;
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--ss-green-gradient);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.step-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Success Stories */
+.success-stories {
+  display: grid;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.story {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  border-left: 4px solid var(--ss-green-dark);
+}
+
+.story h4 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.story p {
+  color: #666;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* Sidebar */
+.content-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.impact-card,
+.donation-card,
+.get-involved-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.impact-card h3,
+.donation-card h3,
+.get-involved-card h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+/* Impact Stats */
+.impact-stats {
+  display: grid;
+  gap: 20px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px;
+  background: var(--ss-green-gradient);
+  border-radius: 10px;
+  color: white;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Donation Card */
+.donation-card p {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.donation-amounts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.donation-btn {
+  padding: 12px;
+  border: 2px solid var(--ss-green-dark);
+  background: transparent;
+  color: var(--ss-green-dark);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.donation-btn:hover {
+  background: var(--ss-green-gradient);
+  color: white;
+}
+
+/* Get Involved Card */
+.get-involved-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.get-involved-card ul {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.get-involved-card li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.get-involved-card li i {
+  color: var(--ss-green-dark);
+  width: 16px;
+}
+
+/* Curriculum Grid for Teaching page */
+.curriculum-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.curriculum-item {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.curriculum-item:hover {
+  border-color: var(--ss-green-light);
+  transform: translateY(-5px);
+}
+
+.curriculum-item i {
+  font-size: 2.5rem;
+  color: var(--ss-green-light);
+  margin-bottom: 15px;
+}
+
+.curriculum-item h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.curriculum-item p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Impact Areas for Sanitary page */
+.impact-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.impact-area {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.impact-area:hover {
+  border-color: var(--ss-green-dark);
+  transform: translateY(-5px);
+}
+
+.impact-area i {
+  font-size: 2.5rem;
+  color: var(--ss-green-dark);
+  margin-bottom: 15px;
+}
+
+.impact-area h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.impact-area p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Donation impact text */
+.donation-impact {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.donation-impact p {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.impact-story {
+  background: #ffffff;
+  padding-top: 110px;
+  padding-bottom: 80px;
+}
+
+.impact-story.alt-story {
+  background: linear-gradient(135deg, rgba(82, 110, 88, 0.08), rgba(146, 178, 76, 0.05));
+}
+
+.impact-story.alt-story .media-slot {
+  background: linear-gradient(135deg, rgba(146, 178, 76, 0.18), rgba(82, 110, 88, 0.12));
+}
+
+.impact-story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 60px;
+  align-items: center;
+}
+
+.impact-copy h2 {
+  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  margin-bottom: 18px;
+  color: #1b2a41;
+}
+
+.impact-copy p {
+  line-height: 1.8;
+  color: #40524a;
+  margin-bottom: 18px;
+}
+
+.impact-highlights {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.highlight-pill {
+  background: rgba(146, 178, 76, 0.15);
+  color: var(--ss-green-dark);
+  border: 1px solid rgba(82, 110, 88, 0.3);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.impact-media {
+  display: grid;
+  gap: 24px;
+}
+
+.media-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(82, 110, 88, 0.16), rgba(146, 178, 76, 0.1));
+  color: rgba(255, 255, 255, 0.92);
+  text-transform: uppercase;
+  letter-spacing: 0.14rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.media-slot.with-image {
+  padding: 0;
+  background: none;
+}
+
+.media-slot.primary {
+  min-height: 300px;
+}
+
+.media-slot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(82, 110, 88, 0.18), rgba(146, 178, 76, 0));
+  opacity: 1;
+  transition: opacity 0.35s ease;
+}
+
+.media-slot span {
+  position: relative;
+  z-index: 1;
+}
+
+.media-slot.with-image::before {
+  opacity: 0;
+}
+
+.media-slot.with-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  transform: scale(1.02);
+  transition: transform 0.6s ease;
+}
+
+.media-slot.with-image:hover::before {
+  opacity: 0.25;
+}
+
+.media-slot.with-image:hover img {
+  transform: scale(1.07);
+}
+
+.initiative-hero.has-slides .hero-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background: #0f172a;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(82, 110, 88, 0.25));
+}
+
+.initiative-hero.has-slides .hero-slide img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .content-main {
+    padding: 40px;
+  }
+
+  .impact-story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .impact-media {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .initiative-hero {
+    padding: 80px 0;
+  }
+  
+  .initiative-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero-icon {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .hero-icon i {
+    font-size: 2.5rem;
+  }
+  
+  .content-main {
+    padding: 30px 20px;
+  }
+  
+  .content-main h2 {
+    font-size: 1.8rem;
+  }
+  
+  .step {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  
+  .donation-amounts {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-media {
+    grid-template-columns: 1fr;
+  }
+
+  .media-slot {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .impact-media {
+    grid-template-columns: 1fr;
+  }
+
+  .media-slot {
+    min-height: 200px;
+  }
+}

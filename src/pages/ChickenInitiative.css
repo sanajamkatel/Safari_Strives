@@ -1,0 +1,603 @@
+.chicken-initiative {
+  margin-top: 150px;
+}
+
+/* Hero Slideshow */
+.chicken-hero-slideshow {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+/* Slide indicators */
+.slide-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 4;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
+}
+
+.indicator:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Content Cards */
+.content-card {
+  background: white;
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.content-card h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.content-card h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--ss-green-gradient);
+  border-radius: 2px;
+}
+
+.content-card p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Highlight Box */
+.highlight-box {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-left: 5px solid var(--ss-green-dark);
+  padding: 30px;
+  margin: 40px 0;
+  border-radius: 10px;
+}
+
+.highlight-text {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #2c3e50;
+  margin: 0;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--ss-green-gradient);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Business Model Grid */
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.model-item {
+  text-align: center;
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.model-item:hover {
+  transform: translateY(-10px);
+}
+
+.model-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--ss-green-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+  font-size: 2rem;
+}
+
+.model-item h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.model-item p {
+  color: #666;
+  margin: 0;
+}
+
+/* Programs Grid */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.program-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+}
+
+.program-card.nutrition {
+  border-top: 5px solid var(--ss-green-light);
+}
+
+.program-card.sanitation {
+  border-top: 5px solid var(--ss-green-dark);
+}
+
+.program-card.microloans {
+  border-top: 5px solid var(--ss-green-light);
+}
+
+.program-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: white;
+}
+
+.program-card.nutrition .program-icon {
+  background: var(--ss-green-gradient);
+}
+
+.program-card.sanitation .program-icon {
+  background: var(--ss-green-gradient);
+}
+
+.program-card.microloans .program-icon {
+  background: var(--ss-green-gradient);
+}
+
+.program-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.program-lead {
+  font-weight: 600;
+  color: var(--ss-green-dark);
+  margin-bottom: 15px;
+}
+
+.program-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.program-card li {
+  padding: 8px 0;
+  position: relative;
+  padding-left: 25px;
+  color: #555;
+}
+
+.program-card li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--ss-green-dark);
+  font-weight: bold;
+}
+
+/* Partnership Benefits */
+.partnership-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.benefit-item i {
+  font-size: 2rem;
+  color: var(--ss-green-dark);
+  width: 50px;
+  text-align: center;
+}
+
+.benefit-item span {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.partnership-result {
+  background: linear-gradient(135deg, #e8f5e8, #f0f8f0);
+  padding: 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: var(--ss-green-dark);
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Sustainability Grid */
+.sustainability-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.sustainability-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.sustainability-item:hover {
+  transform: translateY(-5px);
+}
+
+.sustainability-item i {
+  font-size: 2.5rem;
+  color: var(--ss-green-dark);
+  margin-bottom: 20px;
+}
+
+.sustainability-item h4 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.sustainability-item p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Impact Grid */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.impact-item {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.impact-item:hover {
+  transform: translateY(-10px);
+}
+
+.impact-item i {
+  font-size: 3rem;
+  color: var(--ss-green-dark);
+  margin-bottom: 25px;
+}
+
+.impact-item h4 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.impact-item p {
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.story-section {
+  background: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 60px;
+  align-items: center;
+}
+
+.story-copy h2 {
+  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  margin-bottom: 20px;
+  color: #1b2a41;
+}
+
+.story-copy p {
+  color: #40524a;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.story-points {
+  margin-top: 30px;
+  display: grid;
+  gap: 16px;
+}
+
+.story-point {
+  background: rgba(146, 178, 76, 0.12);
+  border-left: 4px solid var(--ss-green-dark);
+  padding: 16px 20px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.story-point strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+  color: var(--ss-green-dark);
+}
+
+.story-point span {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.story-media {
+  display: grid;
+  gap: 24px;
+}
+
+.media-frame {
+  position: relative;
+  border-radius: 24px;
+  min-height: 260px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(82, 110, 88, 0.16), rgba(146, 178, 76, 0.12));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 55px rgba(20, 40, 30, 0.12);
+}
+
+.media-frame.with-image {
+  background: none;
+  padding: 0;
+}
+
+.media-frame.primary {
+  min-height: 320px;
+}
+
+.media-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(82, 110, 88, 0.18), rgba(146, 178, 76, 0));
+  opacity: 1;
+  transition: opacity 0.35s ease;
+}
+
+.media-label {
+  position: relative;
+  z-index: 1;
+  font-size: 0.95rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.media-frame.with-image::before {
+  opacity: 0;
+}
+
+.media-frame.with-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  transform: scale(1.02);
+  transition: transform 0.6s ease;
+}
+
+.media-frame.with-image:hover::before {
+  opacity: 0.25;
+}
+
+.media-frame.with-image:hover img {
+  transform: scale(1.06);
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .model-grid,
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .sustainability-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .partnership-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .story-media {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .chicken-initiative {
+    margin-top: 120px;
+  }
+  
+  .chicken-hero-slideshow {
+    height: 80vh;
+  }
+  
+  .chicken-hero-slideshow h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .content-card {
+    padding: 40px 30px;
+  }
+  
+  .content-card h2 {
+    font-size: 2rem;
+  }
+  
+  .model-grid,
+  .programs-grid,
+  .sustainability-grid,
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .partnership-benefits {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .story-media {
+    grid-template-columns: 1fr;
+  }
+
+  .media-frame {
+    min-height: 220px;
+  }
+}

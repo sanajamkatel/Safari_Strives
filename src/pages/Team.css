@@ -1,0 +1,286 @@
+.team-page {
+  margin-top: 150px;
+}
+
+/* Hero Section */
+.team-hero {
+  background: linear-gradient(135deg, #526e58, #92b24c);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.team-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.team-hero .hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Team Content */
+.team-content {
+  background: #f8f9fa;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.team-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.member-image {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.emoji-avatar {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.member-info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.member-info h4 {
+  font-size: 1.1rem;
+  color: var(--ss-green-dark);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.member-info p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.member-contact {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-link {
+  width: 40px;
+  height: 40px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+  background: var(--ss-green-dark);
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Advisors Section */
+.advisors {
+  background: white;
+}
+
+.advisors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.advisor-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.advisor-card:hover {
+  border-color: var(--ss-green-dark);
+  transform: translateY(-5px);
+}
+
+.advisor-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.advisor-card h4 {
+  font-size: 1rem;
+  color: var(--ss-green-dark);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.advisor-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Join Team Section */
+.join-team {
+  background: linear-gradient(135deg, #92b24c 0%, #526e58 100%);
+  color: white;
+  text-align: center;
+}
+
+.join-content h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
+.join-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.opportunities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.opportunity {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 40px 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.opportunity:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.opportunity i {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.opportunity h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.opportunity p {
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .team-hero {
+    padding: 80px 0;
+  }
+
+  .team-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .team-hero .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .team-card {
+    padding: 30px 20px;
+  }
+
+  .team-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .emoji-avatar {
+    font-size: 3rem;
+  }
+
+  .advisors-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .opportunities {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .opportunity {
+    padding: 30px 25px;
+  }
+
+  .join-content h2 {
+    font-size: 2rem;
+  }
+
+  .join-content p {
+    font-size: 1rem;
+  }
+}

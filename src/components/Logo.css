@@ -1,0 +1,61 @@
+.safari-logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.safari-logo-image {
+  height: auto;
+  transition: all 0.3s ease;
+  object-fit: contain;
+}
+
+/* Size variants */
+.safari-logo-container.small .safari-logo-image {
+  height: 200px;
+  max-width: 400px;
+}
+
+/* Scrolled state - smaller logo */
+.safari-logo-container.small.scrolled .safari-logo-image {
+  height: 80px;
+  max-width: 200px;
+}
+
+.safari-logo-container.medium .safari-logo-image {
+  height: 60px;
+  max-width: 240px;
+}
+
+.safari-logo-container.large .safari-logo-image {
+  height: 80px;
+  max-width: 300px;
+}
+
+/* Hover effect */
+.safari-logo-container:hover .safari-logo-image {
+  transform: scale(1.01);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .safari-logo-container.small .safari-logo-image {
+    height: 120px;
+    max-width: 280px;
+  }
+  
+  .safari-logo-container.small.scrolled .safari-logo-image {
+    height: 60px;
+    max-width: 150px;
+  }
+  
+  .safari-logo-container.medium .safari-logo-image {
+    height: 45px;
+    max-width: 180px;
+  }
+  
+  .safari-logo-container.large .safari-logo-image {
+    height: 60px;
+    max-width: 240px;
+  }
+}

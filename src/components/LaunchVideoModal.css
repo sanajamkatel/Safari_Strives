@@ -1,0 +1,72 @@
+.launch-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  backdrop-filter: blur(2px);
+}
+
+.launch-modal {
+  position: relative;
+  width: min(90vw, 960px);
+  background: #0f172a;
+  border-radius: 18px;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.4);
+  overflow: hidden;
+}
+
+.launch-modal-body {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.launch-modal-body iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0 0 18px 18px;
+}
+
+.launch-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: rgba(15, 23, 42, 0.7);
+  color: #ffffff;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.launch-modal-close:hover {
+  background: rgba(30, 41, 59, 0.85);
+}
+
+@media (max-width: 640px) {
+  .launch-modal {
+    border-radius: 14px;
+  }
+
+  .launch-modal-close {
+    top: 8px;
+    right: 10px;
+    font-size: 1.5rem;
+    width: 36px;
+    height: 36px;
+  }
+}
+
